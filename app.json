@@ -1,0 +1,31 @@
+{
+  "name": "FLEKO-X BOT",
+  "description": "A powerful WhatsApp bot built with Baileys.",
+  "repository": "https://github.com/teccleo2-hubb/RAVEN_BOT",
+  "logo": "https://files.catbox.moe/ydjqye.jpg",
+  "keywords": ["whatsapp", "bot", "baileys", "fleko-x"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Enter your FLEKO-X Session ID here.",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
